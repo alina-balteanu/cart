@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>test_2checkout</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="nav">
+      <button class="currency menu">Currency</button>
+      <div class="curr-wrapper hide menu">
+        <div
+          class="dollars curr menu"
+          data-template="&#36;"
+          data-curr-name="USD"
+        >
+          &#36; USD
+        </div>
+        <div
+          class="pounds curr menu"
+          data-template="&#163;"
+          data-curr-name="GBP"
+        >
+          &#163; GBP
+        </div>
+        <div class="euro curr menu" data-template="&#128;" data-curr-name="EUR">
+          &#128; EUR
+        </div>
+      </div>
+    </nav>
+    <main id="main">
+      <div class="main-wrapper">
+        <h1>Checkout page</h1>
+        <div class="content-wrapper">
+          <div class="products-wrapper" id="prod-wrapper"></div>
+          <div class="cart-wrapper">
+            <span class="prod-cart-text"
+              >No products in your shopping cart</span
+            >
+            <div class="cart-details hide">
+              <div class="item-headers">
+                <div class="prod-header">Product</div>
+                <div class="quantity-header">Quantity</div>
+                <div class="value-header">Value</div>
+                <div class="delete-header">Delete</div>
+              </div>
+            </div>
+
+            <div class="total hide" id="total">
+              <span
+                >Total: <span data-curr=""></span
+                ><span class="total-val value">0</span></span
+              >
+            </div>
+
+            <button class="continue hide">Continue</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="bundle.js"></script>
+  </body>
+</html>

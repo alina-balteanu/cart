@@ -1,0 +1,38 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "carttest",
+  "main": "main.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js --mode production --watch"
+  },
+  "keywords": [
+    "carttest"
+  ],
+  "author": "alina-balteanu",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.3.4",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/runtime": "^7.3.4",
+    "autoprefixer": "^9.4.9",
+    "axios": "^0.18.0",
+    "money": "^0.2.0",
+    "parallax-js": "^3.1.0",
+    "postcss-loader": "^3.0.0"
+  }
+}
