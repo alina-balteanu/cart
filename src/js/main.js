@@ -182,14 +182,14 @@ window.onload = function() {
   function findPlaceToAppend(productRows, price) {
     productRows.sort((a, b) => {
       return (
-        parseFloat(a.querySelector(".prod-value").textContent) -
-        parseFloat(b.querySelector(".prod-value").textContent)
+        parseFloat(b.querySelector(".prod-value").textContent) -
+        parseFloat(a.querySelector(".prod-value").textContent)
       );
     });
 
     for (let i = 0; i < productRows.length; i++) {
       if (
-        parseFloat(productRows[i].querySelector(".prod-value").textContent) >=
+        parseFloat(productRows[i].querySelector(".prod-value").textContent) <=
         parseFloat(price)
       )
         return i;
